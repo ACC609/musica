@@ -1,0 +1,45 @@
+h2{
+    text-align: center;
+    margin-top: 60px;
+}
+h2 span{
+    color: red;
+}
+h3{
+    padding: 20px;
+}
+.basico{
+    padding: 10px 40px;
+}
+.basico ul li{
+    list-style-type: none;
+    padding: 0 5px;
+    text-decoration: solid;
+    font-weight: 400;
+}
+.medio{
+    padding: 10px 40px;
+}
+.medio ul li{
+    list-style-type: none;
+    padding: 0 5px;
+    text-decoration: solid;
+}
+.premium{
+    padding: 10px 40px;
+}
+.premium ul li{
+    list-style-type: none;
+    padding: 0 5px;
+    text-decoration: solid;
+}
+.eps{
+    padding: 10px 40px;
+}
+.iban{
+    padding:10px 40px;
+}
+.esconder a{
+    text-decoration: none;
+    color: #111;
+}

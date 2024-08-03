@@ -1,0 +1,88 @@
+/* Estilos gerais para o container */
+.container {
+    margin-top: 40px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+.card{
+    height: auto;
+}
+/* Estilos para o título e o parágrafo */
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Estilos para a imagem */
+img {
+    max-width: 90%;
+    max-height: 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Estilos para o botão voltar */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .back-button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .back-button {
+        padding: 6px 12px;
+    }
+}

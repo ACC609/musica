@@ -1,0 +1,665 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+
+    height: 100vh;
+
+    background-color: #ffffff;
+}
+header{
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+
+    background-color: #101010;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99999;
+}
+header .logo h1, .logo{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -9px;
+    color: #ccc;
+}
+header .logo h1 span, .logo span{
+    color: #ad0000;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: .2s linear;
+   
+}
+.menu li a:hover{
+    color: #333;
+    padding: 10px 10px 10px 10px;
+}
+.menu li a.active {
+    font-weight: bold;
+    color: blue;
+}
+
+/*Estilo do menu-mobile*/
+.btn-abrir-menu i{
+    color: #ccc;
+    font-size: 40px;
+    font-weight: 400;
+    display: inline;
+}
+.menu-mobile{
+    background-color: #111;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+    display: inline;
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+    color: #ccc;
+}
+.menu-mobile .btn-fechar i{
+    font-size: 30px;
+    font-weight: 400;
+}
+.menu-mobile nav ul{
+    text-align: center;
+    list-style-type: none;
+}
+.menu-mobile nav ul li a{
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 2%;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    transition: .2s linear;
+}
+.menu-mobile nav ul li a:hover{
+    background-color: #ccc;
+    color: #111;
+}
+
+.overlay-menu{
+    background-color: #000000a6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+/*Fim do Header*/
+
+section.hero-site{
+    background-color: #190c5f;
+    height: 53vh;
+}
+section.hero-site img{
+   max-width: 300px;
+   float: right;
+}
+section.hero-site .txt{
+   display: flex;
+   align-items: center;
+   padding: 90px;
+}
+section.hero-site h2{
+   color: #ccc;
+   font-size: 30px;
+   font-weight: 300;
+}
+section.hero-site h2 span{
+   display: block;
+   font-weight: 600;
+}
+.container {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.music-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    overflow: hidden;
+    width: 200px;
+    height: 400px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+}
+
+.card-content p {
+    margin: 0 0 10px 0;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #190c5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-button:hover {
+    background-color: #130b3d;
+}
+
+section.destaques{
+    height: 600px;
+    background-image: url(../img/Wonder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+section.destaques > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000096;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+section.destaques > .interface{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    z-index: 2;
+}
+section.destaques  h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+section.destaques  h3 span{
+    display: block;
+    font-weight: 700;
+}
+section.destaques  p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.destaques button{
+    width: 220px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    transition: .2s linear;
+    cursor: pointer;
+    font-size: 20px;
+}
+.destaques button:hover{
+    background-color: #190c5f;
+    color: #ccc;
+}
+.music-cards2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+h2 {
+    padding: 20px;
+    font-size: 40px;
+    color: #333;
+}
+
+/* Estilo do container flexbox */
+.music-cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de cada card de música */
+.card2 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+}
+
+
+/* Estilo da imagem da música */
+.card2 img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover;
+}
+
+/* Estilo do conteúdo do card */
+.card-content2 {
+    padding: 15px;
+}
+
+.card-content2 h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content2 p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.card-content2 .download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #190c5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card-content2 .download-button:hover {
+    background-color: #130b3d;
+}
+
+
+section.baixar{
+    height: 600px;
+    background-image: url(../img/Eterno.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+section.baixar > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000096;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+section.baixar > .interface{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    z-index: 2;
+}
+section.baixar  h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+section.baixar  h3 span{
+    display: block;
+    font-weight: 700;
+}
+section.baixar  p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.baixar button{
+    width: 220px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    transition: .2s linear;
+    cursor: pointer;
+    font-size: 20px;
+}
+.baixar button:hover{
+    background-color: #190c5f;
+    color: #ccc;
+}
+
+section.last {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section.last .album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+section.last .album img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+section.last .album .card3{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    max-width: 300px;
+    width: 100%;
+}
+
+section.last .album ul li{
+    list-style-type: none;
+}
+section.last .album-cover{
+    width: 100%;
+    height: auto;
+}
+
+section.last .album-details{
+    padding: 15px;
+}
+
+section.last .album-title{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.album-artist, 
+.album-release-date,
+.album-genre {
+    margin: 5px 0;
+}
+
+/* Container do formulário de pesquisa */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #ccc; 
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilizando o ícone de pesquisa */
+.search i {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+/* Estilizando o input de pesquisa */
+.search input {
+    flex: 1; 
+    padding: 8px 12px;
+    border: 1px solid #ced4da; 
+    border-radius: 4px; 
+    font-size: 1rem;
+    outline: none; 
+    transition: border-color 0.3s ease;
+}
+
+.search input:focus {
+    border-color: #007bff;
+}
+
+/* Estilizando o botão de pesquisa */
+.search button {
+    background-color: #190c5f; 
+    color: white; 
+    border: none;
+    padding: 8px 12px;
+    margin-left: 10px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #0056b3;
+}
+
+.search button:focus {
+    outline: none;
+}
+
+footer{
+    background-color: #111;
+    padding: 40px;
+}
+footer .geral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes-sociais {
+    display: flex;
+    gap: 10px; 
+}
+footer .redes-sociais button {
+        width: 35px;
+        height: 35px;
+        font-size: 24px; 
+        border-radius: 50%; 
+        border: none; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0; 
+        transition: background-color 0.3s, transform 0.3s; 
+        cursor: pointer;
+    
+}
+
+footer .redes-sociais button:hover {
+    background-color: #e0e0e0; 
+    transform: scale(1.1); 
+}
+
+footer .redes-sociais a {
+    margin: 0 5px; 
+}
+footer .copyright{
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .search{
+        width: 100%;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .card2 {
+        max-width: 100%;
+    }
+    section.hero-site img{
+        width: 150px;
+        margin-top: 20px;
+    }
+    section.hero-site{
+        height: 53vh;
+     }
+    section.hero-site h2{
+        color: #ccc;
+        font-size: auto;
+        font-weight: 300;
+        margin-right: 40px;
+        margin-top: -40px;
+     }
+     section.hero-site h2 span{
+        display: block;
+        font-weight: 600;
+     }
+     .menu{
+        display: none;
+    }
+
+      /*Menu Mobile config*/
+    .menu-mobile{
+        display: block;
+    }
+    .btn-abrir-menu i{
+        display: block;
+    }
+    section.hero-site{
+        height: 27vh;
+    }
+    h2 {
+        padding: 20px;
+        font-size: 30px;
+        color: #333;
+    }
+    footer .geral{
+        display: block;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    .redes-sociais {
+        display: flex;
+        justify-content: center;
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+    section.hero-site img {
+        display: none;
+    }
+
+    section.hero-site .txt {
+        padding: 90px;
+        width: 100%;
+        text-align: center;
+    }
+
+    section.hero-site h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .esconder a{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .card2 {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    height: 50vh;
+    background-color: #838383;
+    border-radius: 20px;
+}

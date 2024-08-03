@@ -1,0 +1,62 @@
+/* Estilo para o body e container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para links e botões */
+.back-button, .submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover, .submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o formulário */
+.music-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.music-form input[type="text"],
+.music-form input[type="number"],
+.music-form input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.music-form input[type="submit"] {
+    width: 100%;
+    background-color: #28a745;
+}
+
+.music-form input[type="submit"]:hover {
+    background-color: #218838;
+}
